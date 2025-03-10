@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Solar Calculator</title>
         <link rel="stylesheet" href="css/style.css">
         <nav>
-            <a href="EcoLifeHome.html">Home</a> |
-            <a href="EcoLifeAbout.html">About</a> |
-            <a href="EcoLifeContact.html">Contact</a> |
-            <a href="EcoLifeSolar.html">Solar Panel Calculator</a> |
-            <a href="EcoLifeComp.html">Comparisons</a> |
-            <a href="EcoLifeTracker.html">Tracker</a> |
+            <a href="index.html">Home</a> 
+            <a href="EcoLifeAbout.html">About</a> 
+            <a href="EcoLifeContact.html">Contact</a> 
+            <a href="EcoLifeSolar.html">Solar Panel Calculator</a> 
+            <a href="EcoLifeComp.html">Comparisons</a> 
+            <a href="EcoLifeTracker.html">Tracker</a> 
             <a href="EcoLifeLogin.html" style="text-align: right;">Login</a>
         </nav>
     </head>
@@ -24,11 +25,14 @@
     
         <section>
             <h2>Calculator</h2>
-            <label for="solarSQFT">Solar Panels per SQFT:</label>
-            <input type="number" id="solarSQFT" name="solarSQFT"><br><br><br>
-            <label for="solarCost">Solar Panel Cost ($) per SQFT:   </label>
-            <input type="number" id="solarCost" name="solarCost"><br><br>
-            <input type="submit" value="Submit">
+            <form>
+                <label for="solarSQFT">Solar Panels per SQFT:</label>
+                <input type="number" id="solarSQFT" name="solarSQFT"><br><br><br>
+                <label for="solarCost">Solar Panel Cost ($) per SQFT:   </label>
+                <input type="number" id="solarCost" name="solarCost"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            
         </section>
         
     </body>

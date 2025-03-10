@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Tracker</title>
         <link rel="stylesheet" href="css/style.css">
         <nav>
-            <a href="EcoLifeHome.html">Home</a> |
-            <a href="EcoLifeAbout.html">About</a> |
-            <a href="EcoLifeContact.html">Contact</a> |
-            <a href="EcoLifeSolar.html">Solar Panel Calculator</a> |
-            <a href="EcoLifeComp.html">Comparisons</a> |
-            <a href="EcoLifeTracker.html">Tracker</a> |
+            <a href="index.html">Home</a> 
+            <a href="EcoLifeAbout.html">About</a> 
+            <a href="EcoLifeContact.html">Contact</a> 
+            <a href="EcoLifeSolar.html">Solar Panel Calculator</a> 
+            <a href="EcoLifeComp.html">Comparisons</a> 
+            <a href="EcoLifeTracker.html">Tracker</a> 
             <a href="EcoLifeLogin.html" style="text-align: right;">Login</a>
         </nav>
     </head>
@@ -17,27 +18,28 @@
     <body>
         <h1>Tracker</h1>
         <section>
-            <label for="waterFilled">Water (mL) filled into reusable bottles:</label>
-            <input type="number" id="waterFilled" name="waterFilled">
+            <form>
+                <label for="waterFilled">Water (mL) filled into reusable bottles:</label>
+                <input type="number" id="waterFilled" name="waterFilled">
+                <br><br><br>
 
-            <br><br><br>
+                <label for="reusableBags"># of times a Reusable Bag was used when shopping:</label>
+                <input type="number" id="reusableBags" name="reusableBags">
 
-            <label for="reusableBags"># of times a Reusable Bag was used when shopping:</label>
-            <input type="number" id="reusableBags" name="reusableBags">
+                <br><br><br>
+                
+                <label for="distanceDrivenElectric">Kilometers driven on an electric car:</label>
+                <input type="number" id="distanceDrivenElectric" name="distanceDrivenElectric">
 
-            <br><br><br>
-            
-            <label for="distanceDrivenElectric">Kilometers driven on an electric car:</label>
-            <input type="number" id="distanceDrivenElectric" name="distanceDrivenElectric">
+                <br><br><br>
 
-            <br><br><br>
+                <label for="distanceTravelledPublic">Kilometers travelled on public transit:</label>
+                <input type="number" id="distanceTravelledPublic" name="distanceTravelledPublic">
 
-            <label for="distanceTravelledPublic">Kilometers travelled on public transit:</label>
-            <input type="number" id="distanceTravelledPublic" name="distanceTravelledPublic">
+                <br><br><br>
 
-            <br><br><br>
-
-            <input type="submit" value="Submit">
+                <input type="submit" value="Submit">
+            </form>
         </section>
     </body>
 </html>

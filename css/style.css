@@ -1,53 +1,40 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 h1 {
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
     font-size: 60px;
     color:white;
     background-color:lightgreen;
     margin-top: 0px;
 }
 
-h2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 nav {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: palegreen;
+}
+
+nav a{
     background-color:palegreen;
-    margin-bottom:0px;
-    margin-top:0px;
     font-size: 20px;
+    padding: 10px;
+    display: inline-block;
 }
 
-p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-label {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-input {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-a:link {
+nav a:link {
     color:black;
     text-decoration: none;
 }
 
-a:visited {
+nav a:visited {
     color:black;
     text-decoration: none;
 }
 
-a:hover {
+nav a:hover {
     color:blue;
+    background-color: rgb(39, 255, 103);
     text-decoration: none;
-}
-
-ul {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 footer {
@@ -58,4 +45,70 @@ footer {
 img {
     width: 100%;
     height: 100%;
+}
+
+form {
+    background-color: antiquewhite;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    box-shadow: 5px 5px aliceblue;
+}
+
+input[type=submit] {
+    width: 100px;
+    background-color: greenyellow;
+}
+
+@media all and (max-width: 700px){
+    p {
+        font-size: 20px;
+    }
+    .bottomFoot {
+        margin-top: 200px;
+    }
+    form {
+        width: 100%;
+    }
+}
+@media all and (min-width: 701px) and (min-height: 680px){
+    .bottomFoot {
+        position: absolute;
+        bottom: 0;
+    }
+    form {
+        width: 40%;
+    }
+}
+
+@media all and (min-width: 701px) and (orientation:portrait) and (min-height: 1120px){
+    .bottomFoot {
+        position: absolute;
+        bottom: 0;
+    }
+    form {
+        width: 70%;
+    }
+    p {
+        font-size: 25px;
+    }
+    label {
+        font-size: 25px;
+    }
+}
+
+@media all and (min-width: 701px) and (orientation:portrait) and (max-height: 1119px){
+    .bottomFoot {
+        position: absolute;
+        bottom: 0;
+    }
+    form {
+        width: 70%;
+    }
+    p {
+        font-size: 20px;
+    }
+    label {
+        font-size: 25px;
+    }
 }
