@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
         <title>Solar Calculator</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/solarCalculator.js" defer></script>
         <nav>
             <a href="index.html">Home</a> 
             <a href="EcoLifeAbout.html">About</a> 
@@ -25,15 +26,25 @@
     
         <section>
             <h2>Calculator</h2>
-            <form>
+            <form id="solarCalc">
                 <label for="solarSQFT">Solar Panels per SQFT:</label>
-                <input type="number" id="solarSQFT" name="solarSQFT"><br><br><br>
-                <label for="solarCost">Solar Panel Cost ($) per SQFT:   </label>
-                <input type="number" id="solarCost" name="solarCost"><br><br>
+                <input type="number" id="solarSQFT" name="solarSQFT" placeholder="0" min="0"><br><br><br>
+                <label for="solarCost">Solar Panel Cost (Total $):   </label>
+                <input type="number" id="solarCost" name="solarCost" placeholder="0" min="0"><br><br>
                 <input type="submit" value="Submit">
             </form>
             
         </section>
         
+
+        <footer class="bottomFoot">
+            <p>How much does a 6kW solar power system cost and how much electricity does it produce?</p>
+            <p>By: Andy Sendy</p>
+            <p>Source: <a href="https://www.solarreviews.com/blog/how-much-does-a-6kw-solar-power-system-cost-and-how-much-electricity-does-it-produce">SolarReviews</a></p>
+            <br>
+            <p>How Much Do Solar Panels Save The Average Homeowner?</p>
+            <p>By: Chauncy Crail & Corinne Tynan</p>
+            <p>Source: <a href="https://www.forbes.com/home-improvement/solar/how-much-solar-panels-save/">Forbes</a></p>
+        </footer>
     </body>
 </html>
